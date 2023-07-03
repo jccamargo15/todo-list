@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Text, View, TextInput, TouchableOpacity, FlatList, Alert } from 'react-native';
 
 import { Participant } from '../../components/Participant';
+import Logo from '../../../assets/logo.svg';
 
 import { styles } from './styles';
 
@@ -40,6 +41,8 @@ export default function Home() {
       <Text style={styles.eventDate}>
         Segunda, 22 de maio de 2023.
       </Text>
+
+      <Logo style={styles.todoLogo} width={110} height={32} />
 
       <View style={styles.form}>
         <TextInput
